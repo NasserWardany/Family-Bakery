@@ -1,0 +1,403 @@
+/* Base styles (existing styles) */
+body {
+    font-family: "Alegreya";
+}
+
+.logo {
+    width: 45%;
+    height: 50px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: baseline;
+}
+
+.list {
+    width: 45%;
+    height: 50px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 10px;
+}
+
+.list ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.home {
+    background-image: url(Bakery\ images/drew-coffman-1872.jpg);
+    height: 1000px;
+    background-size: cover;
+    max-height: 900px;
+}
+
+/* home section style */
+.info {
+    color: white;
+    text-align: center;
+    margin: 300px auto;
+    width: 700px;
+}
+
+.info h4 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.info h1 {
+    font-size: 50px;
+}
+
+.info p {
+    font-size: 30px;
+}
+
+.info button {
+    padding: 20px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.info .btn1 {
+    background-color: #8e7754;
+    border: 2px solid rgb(245, 242, 242);
+}
+
+.info .btn2 {
+    border: 2px solid white;
+}
+
+/* section 2 */
+.who {
+    margin: 20px 50px;
+    background-color: brown;
+}
+
+.who .pic {
+    width: 45%;
+    float: left;
+}
+
+.who .pic img {
+    width: 100%;
+}
+
+.who .text {
+    width: 45%;
+    float: left;
+    line-height: 20px;
+    padding: 30px;
+    margin-right: 50px;
+}
+
+.who .text p {
+    line-height: 30px;
+}
+
+table img {
+    width: 30px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* section 3 */
+.location {
+    margin-top: 100px;
+    margin: 50px auto;
+    background-color: #eee;
+}
+
+.text1 {
+    width: 45%;
+    float: left;
+    margin-right: 100px;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.pic1 {
+    width: 45%;
+    float: left;
+}
+
+.pic1 img {
+    width: 100%;
+}
+
+/* section baking */
+.baking .head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3 {
+    display: inline-block;
+    width: 30%;
+    height: 500px;
+    margin-right: 15px;
+}
+
+/* contact section */
+.contact {
+    line-height: 30px;
+    padding: 30px;
+}
+
+.contact .call {
+    width: 45%;
+    float: left;
+    height: 500px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.contact .call table img {
+    color: rgb(171, 90, 23);
+    background: #aaaaaa;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact .map {
+    height: 500px;
+    width: 45%;
+    float: left;
+}
+
+.contact .map img {
+    width: 100%;
+}
+
+/* footer section */
+.footer {
+    color: white;
+    background-color: #403d38;
+    padding: 30px;
+    line-height: 30px;
+    overflow: auto;
+}
+
+.footer div {
+    margin-right: 50px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.footer .about,
+.footer .special,
+.footer .hours,
+.footer .details {
+    width: 20%;
+    float: left;
+}
+
+.footer .line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.end {
+    background-color: #353330;
+    text-align: center;
+    color: white;
+}
+
+.end .end-img {
+    padding: 50px;
+}
+
+.end .links ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.end .links ul li {
+    display: inline-block;
+}
+
+.end .links ul li img {
+    max-width: 50px;
+}
+
+/* Media Queries */
+
+/* For tablets and devices with a max width of 768px */
+@media (max-width: 768px) {
+
+    .logo,
+    .list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: auto;
+    }
+
+    .list ul {
+        display: block;
+        padding: 0;
+    }
+
+    .list ul li {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .home {
+        height: auto;
+        max-height: none;
+        background-position: center;
+    }
+
+    .info {
+        margin: 150px auto;
+        width: 90%;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .who {
+        margin: 20px;
+    }
+
+    .who .pic,
+    .who .text {
+        width: 100%;
+        float: none;
+    }
+
+    .who .text {
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .location {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .text1,
+    .pic1 {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .baking .cards .card1,
+    .baking .cards .card2,
+    .baking .cards .card3 {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+        height: auto;
+    }
+
+    .contact .call,
+    .contact .map {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
+
+    .contact .call table img {
+        width: 16px;
+    }
+
+    .footer div {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .footer .about,
+    .footer .special,
+    .footer .hours,
+    .footer .details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .end .links ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .end .links ul li {
+        margin: 0 10px;
+    }
+}
+
+/* For phones with a max width of 480px */
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .info button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .who .text p {
+        line-height: 24px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .footer div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .end .end-img img {
+        max-width: 80px;
+    }
+
+    .end .links ul li img {
+        max-width: 40px;
+    }
+}
